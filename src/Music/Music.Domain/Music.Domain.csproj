@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\BandAgg\" />
+    <Folder Include="Entities\ArtistAgg\" />
+    <Folder Include="Entities\AlbumAgg\" />
+    <Folder Include="Entities\PictureAgg\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\Framework.csproj" />
+  </ItemGroup>
+
 </Project>
