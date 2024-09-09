@@ -6,13 +6,20 @@ namespace Music.Domain.Entities.GenreAgg;
 
 public class GenreEntity : EntityBase
 {
-    public GenreEntity(string title)
+    public GenreEntity(string title, string? description)
     {
         Title = title;
+        Description = description;
     }
 
-    public string Title { get; set; }
-    public string? Description { get; set; }
+    public void Edit(string title, string? description)
+    {
+        Title = title;
+        Description = description;
+    }
+
+    public string Title { get; private set; }
+    public string? Description { get; private set; }
 
 
     public ICollection<BandEntity>? Bands { get; private set; }

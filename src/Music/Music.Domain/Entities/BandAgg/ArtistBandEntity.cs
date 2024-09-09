@@ -10,7 +10,6 @@ public class ArtistBandEntity : EntityBase
         ArtistId = artistId;
         BandId = bandId;
         Description = description;
-
         ArtistInBandState = ArtistInBandState.Join;
     }
 
@@ -25,8 +24,8 @@ public class ArtistBandEntity : EntityBase
     
     public ArtistInBandState ArtistInBandState { get; private set; }
 
-    public ICollection<InstrumentEntity> Roles { get; private set; }
-
-    public void AddRole(InstrumentEntity model) => Roles.Add(model);
-    public void RemoveRole(InstrumentEntity model) => Roles.Remove(model);
-}
+    public void ChangeStat(ArtistInBandState state)
+    {
+        ArtistInBandState = state;
+    }
+ }

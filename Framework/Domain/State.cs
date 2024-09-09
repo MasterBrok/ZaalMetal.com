@@ -1,6 +1,6 @@
 ﻿namespace Framework.Domain;
 
-public enum StateEntity
+public enum State
 {
     Enable = 1,
     Disable = 2,

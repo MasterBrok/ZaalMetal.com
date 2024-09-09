@@ -10,9 +10,9 @@ public abstract class EntityBase
 
     public string Id { get; private set; }
     public DateTime CreationTimeAt { get; private set; }
-    public StateEntity State { get; private set; }
+    public State State { get; private set; }
 
 
-    public void ChangeState(StateEntity state) => State = state;
+    public void ChangeState(State state) => State = state;
 }
 
